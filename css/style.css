@@ -59,10 +59,9 @@ header {
 }
 
 .menu-ham {
-    background-image: url(../Archivos/ICONOS/SVG\ MENU.svg);
+    background-image: url(../Archivos/ICONOS/Menu\ hamb.svg);
     box-shadow: none;
     border: 0;
-    background-color: #FFFFFF;
 }
 
 /*Fin-Encabezado*/
@@ -175,6 +174,10 @@ footer div img {
 
 .footer-info h3 {
     font-size: medium;
+}
+
+.footer-icon{
+padding-bottom: 10px;
 }
 
 .footer-icon img {
