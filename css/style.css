@@ -1,0 +1,824 @@
+* {
+    padding: 0;
+    ;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Link-Font*/
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+}
+
+/* ANTERIOR MENU
+header{
+    background-color:#181818;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    width: 120px;
+    padding: 10px;
+    }
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    column-gap: 50px; 
+    margin-right: 100px;
+}
+
+header nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 16px;
+}
+/*
+
+/*comienzo-css-header*/
+header nav div a img {
+    width: 120px;
+    height: 110px;
+    padding-left: 5px;
+}
+
+header {
+    background-color: #181818;
+}
+
+.menu {
+    flex-grow: 0;
+    padding-right: 100px;
+}
+
+.nav-item a {
+    color: white;
+}
+
+.menu-ham {
+    background-image: url(../Archivos/ICONOS/SVG\ MENU.svg);
+    box-shadow: none;
+    border: 0;
+    background-color: #FFFFFF;
+}
+
+/*Fin-Encabezado*/
+
+/*main*/
+.main-home {
+    background-image: url(../Archivos/FONDOS/Posible\ fondo\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1200px;
+}
+.main-home section {
+    text-align: right;
+    padding-right: 10%;
+    padding-top: 20px;
+}
+
+
+#main-home {
+    color: white;
+    text-align: right;
+    padding-right: 100px;
+    padding-bottom: 1%;
+}
+
+
+.main-carrusel{
+    display: flex;
+    justify-content: center;
+    background-color: #181818;
+    border-bottom: 3px solid white;
+}
+
+.carrusel{
+    padding-top: 10px;
+    width: 240px;
+    height: 220px;
+}
+
+
+/*media Queris mobile Main*/
+@media(max-width:768px){
+
+.main-home section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-home section{
+text-align: center;
+}
+
+.inframe-main{
+    width: 300px;
+    height: 250px;
+}
+}
+/*Fin-Main*/
+
+/*Comienzo-footer*/
+footer {
+    background-color: #181818;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: medium;
+}
+
+footer div img {
+    width: 110px;
+    height: 110px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parte-dos-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parte-dos-footer nav {
+    text-align: center;
+    padding-right: 20px;
+}
+
+.parte-dos-footer nav ul li {
+    list-style-type: none;
+}
+
+.parte-dos-footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.footer-info {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.footer-info h3 {
+    font-size: medium;
+}
+
+.footer-icon img {
+    padding: 0%;
+    width: 50px;
+    height: 50px;
+}
+
+/*Footer Media Queris mobile*/
+
+@media (max-width:768px) {
+
+    footer {
+        font-size: medium;
+    }
+
+    .logo-footer img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .parte-dos-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        font-size: small;
+    }
+
+    .parte-dos-footer nav ul {
+        grid-area: menu;
+    }
+
+    .footer-icon {
+        grid-area: icon;
+        display: flex;
+        flex-direction: column;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .footer-icon img {
+        width: 35px;
+        height: 30px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .footer-info h3 {
+        text-align: center;
+        padding: 0px;
+    }
+}
+
+/*Fin-Footer*/
+
+
+/*Main-Shop*/
+.main-shop {
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "total total total total"
+        "lista . . . "
+        "lista buscador  buscador buscador"
+        "lista . . imagenes";
+}
+
+.buscador {
+    grid-area: buscador;
+    text-align: center;
+    align-items: center;
+}
+
+.primero-shop {
+    grid-area: total;
+}
+
+.primero-shop h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.primero-shop div {
+    text-align: start;
+    padding-left: 150px;
+    padding-top: 50px;
+}
+
+
+.medio-shop {
+
+    grid-area: lista;
+    padding-top: 25px;
+    margin-top: 100px;
+}
+
+.medio-shop ul li {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.ultimo-shop {
+    margin-top: 10px;
+    grid-area: imagenes;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+}
+
+.imagenes-main-shop {
+
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+}
+
+/*Media Queris Shop Mobile*/
+
+@media (max-width:768px) {
+
+    .main-shop {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .primero-shop {
+        padding: 0%;
+        border-bottom: 3px solid #181818;
+    }
+
+    .primero-shop h1 {
+        padding-top: 20px;
+        font-weight: bolder;
+    }
+
+    .medio-shop {
+        font-size: small;
+        padding: 0%;
+    }
+
+    .medio-shop ul li {
+        list-style-type: none;
+        text-align: left;
+        font-size: medium;
+    }
+
+    .buscador {
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+    }
+
+    .buscador input {
+        width: 150px;
+    }
+
+    .button-buscador h2 {
+    font-size:17px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 5px;
+    }
+
+    .ultimo-shop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        justify-content: center;
+
+    }
+
+    .imagenes-main-shop {
+        width: 80px;
+        height: 70px;
+    }
+
+
+}
+
+/*Main-Trabajos*/
+
+.trabajo-main h1{
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 3px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.centro-trabajo-main{
+display: grid;
+grid-template-columns: repeat(3,auto);
+grid-template-rows: repeat(3,auto);
+}
+
+.imagenes-trabajos {
+    width: 250px;
+    height: 300px;
+    padding: 5px;
+}
+
+/* Media Queris Mobile Trabajos*/
+@media (max-width:768px){
+
+.trabajo-main{
+    text-align: center;
+    border-bottom: 3px solid black;
+    padding-top: 20px;
+}
+
+.centro-trabajo-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagenes-trabajos{
+    width: 350px;
+    height: 250px;
+    overflow:auto;
+    padding-bottom: 10px;
+}
+}
+
+/*Fin-Main-trabajos*/
+
+/*Main-Quienes Somos*/
+.quienes-somos h1 {
+    text-align: center;
+    border-bottom: 2px black solid;
+    padding: 20px;
+}
+
+.contenedor-quienessomos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas:
+        "comenzo comenzo"
+        "vamos vamos"
+        "hacemos hacemos";
+    padding: 40px;
+}
+
+
+.card-comenzo {
+    grid-area: comenzo;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "texto imagen";
+    padding: 30px;
+    border-bottom: 3px black solid;
+
+}
+
+.card-comenzo img {
+    grid-area: imagen;
+}
+
+.texto-primero {
+    grid-area: texto;
+    align-self: center;
+    padding-right: 20px;
+}
+
+.texto-primero h2 {
+    text-align: center;
+}
+
+.texto-primero p {
+    text-align: center;
+}
+
+
+.card-vamos {
+    grid-area: vamos;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "imagen texto";
+    padding: 30px;
+    border-bottom: 3px black solid;
+}
+
+.card-vamos img {
+    grid-area: imagen;
+}
+
+.texto-segundo {
+    grid-area: texto;
+    align-self: center;
+    padding-left: 20px;
+}
+
+.texto-segundo h2 {
+    text-align: center;
+}
+
+.card-hacemos {
+    grid-area: hacemos;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "texto imagen";
+    padding: 30px;
+}
+
+.card-vamos img {
+    grid-area: imagen;
+}
+
+.texto-ultimo {
+    grid-area: texto;
+    align-self: center;
+    padding-right: 20px;
+}
+
+.texto-ultimo h2 {
+    text-align: center;
+}
+
+.texto-ultimo p {
+    text-align: center;
+}
+
+.card {
+    width: 500px;
+    height: 350px;
+}
+
+
+/*Media Queris Mobobile Quienes Somos*/
+@media (max-width:768px){
+
+.quienes-somos{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.card-comenzo{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align:left ;
+    
+}
+
+.card-vamos{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: left;
+    
+}
+
+.card-hacemos{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: left;
+    
+}
+
+.card{
+    width: 350px;
+    height: 200px;
+    border: 0;
+}
+
+
+}
+
+/*Fin Main-Quienes Somos*/
+
+/*Main-Contacto*/
+.inicio-contacto {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 3px black solid;
+}
+
+.imagen-contacto {
+    width: 5%;
+    position: relative;
+    left: 50%;
+}
+
+.main-contacto {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        " primero primero . ."
+        ". . segundo segundo"
+        "tercero tercero . ."
+    ;
+    border-bottom: 4px black solid;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.primero-contacto {
+    grid-area: primero;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    border-bottom: 2px black solid;
+    border-left: 2px black solid;
+    padding-top: 20PX;
+}
+
+
+.primero-contacto p {
+    align-self: center;
+    text-align: center;
+}
+
+.segundo-contacto {
+    grid-area: segundo;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    border-bottom: 2px black solid;
+    border-right: 2px black solid;
+    padding-top: 20px;
+}
+
+.segundo-contacto p {
+    align-self: center;
+    text-align: center;
+}
+
+.tercer-contacto {
+
+    grid-area: tercero;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    border-bottom: 2px black solid;
+    border-left: 2px black solid;
+    padding-top: 20px;
+}
+
+.tercer-contacto p {
+    align-self: center;
+    text-align: center;
+}
+
+.imagen-contacto {
+    width: 70px;
+    height: 70px;
+}
+
+.contacto-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "formulario mapa"
+    ;
+    padding: 50px;
+}
+
+.formulario-contacto {
+
+    grid-area: formulario;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+.mapa-contacto {
+    grid-area: mapa;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.mapa-contacto h2 {
+    padding-bottom: 20px;
+}
+
+.formulario {
+    text-align: center;
+}
+
+/*Media Queris 768px*/
+
+/*header 768px
+@media (max-width:768px){
+    header{
+        background-color:#181818;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header img{
+        width: 70px;
+        padding: 10px;
+        }
+    
+    header nav ul{
+        display: flex;
+        list-style-type: none;
+        column-gap: 50px; 
+        margin-right: 100px;
+    }
+    
+    header nav ul li a{
+        color: aliceblue;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+
+
+}
+
+
+@media (max-width:768px){
+    main div{
+        text-align: center;
+        border-bottom: 2px black solid;
+
+    }
+    .main-contacto{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "primer primer"
+        "segundo segundo"
+        "tercero tercero";
+        padding: 50px;
+    }
+    .primero-contacto{
+        border: none;
+        grid-area: primer;
+        padding-bottom: 20px;
+    }
+    .segundo-contacto{
+        border: none;
+        display: grid;
+    grid-area: segundo;
+    padding-bottom: 20px;
+    }
+    .tercer-contacto{
+        border: none;
+        display: grid;
+        grid-area: tercero; 
+        padding-bottom: 20px;
+    }
+
+    .mapa{
+        height:300px;
+        width: 250px;
+    }
+    .card{
+        display:grid;
+        grid-template-columns: repeat(2,auto) ;
+        grid-template-rows:auto;
+        grid-template-areas:
+        "formulario mapa"
+    ;
+    }
+    
+    .formulario-contacto{
+    
+    grid-area: formulario;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    }
+    
+    .mapa-contacto{
+        grid-area: mapa;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+    
+
+    }
+*/
+/*Media Queris mobile*/
+
+@media (max-width:767px) {
+
+    .formulario h2 {
+        padding-top: 20px;
+    }
+
+
+    .main-contacto {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0px;
+    }
+
+    .primero-contacto {
+        border: none;
+        text-align: center;
+    }
+
+    .segundo-contacto {
+        border: none;
+        text-align: center;
+    }
+
+    .tercer-contacto {
+        border: none;
+        text-align: center;
+    }
+
+    .formulario {
+        padding: 0px;
+    }
+
+    .contacto-main {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+    }
+
+    .mapa-contacto {
+        padding-top: 50px;
+    }
+
+    .mapa {
+        width: 300px;
+        height: 250px;
+    }
+}
