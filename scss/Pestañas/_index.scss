@@ -1,0 +1,41 @@
+/*Comienzo Main Home*/
+main{
+    .main-home{
+        background-image: url(../Archivos/FONDOS/Posible\ fondo\ 1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 1200px;
+        border-bottom: 5px solid #181818;
+        section{
+            text-align: right;
+            padding-right: 10%;
+            padding-top: 20px;
+            #main-home{
+                color: #FFFFFF;
+                text-align: right;
+                padding-right: 100px;
+                padding-bottom: 1%;
+            }
+            .inframe-home{}
+        }
+    }
+    .main-carrusel{
+        display: flex;
+        justify-content: center;
+        background-color: #181818;
+        border-bottom: 3px solid #FFFFFF;
+        border-top: 3px solid #FFFFFF;
+        .carrusel{
+            padding-top: 10px;
+            width: 240px;
+            height: 220px;
+            div{
+                img{}
+            }
+        }
+        button{
+            span{}
+        }
+    }
+}

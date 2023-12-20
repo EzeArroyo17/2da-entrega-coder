@@ -1,0 +1,32 @@
+/*comienzo de header,responsive*/
+
+header{
+    background-color: nth($list: $colores, $n: 1);
+    nav{
+        div{
+            a{
+                img{
+                    width: 120px;
+                    height: 110px;
+                    padding-left: 5px; 
+                }
+            }
+            button{
+                .menu-ham{
+                    background-image: url(../Archivos/ICONOS/Menu\ hamb.svg);
+                    box-shadow: none;
+                    border: 0;
+                }
+            }
+            .menu{
+                flex-grow: 0;
+                padding-right: 100px;
+                ul{
+                    .nav-item{
+                        a{color: nth($list: $colores, $n: 2);}
+                    }
+                }
+            }
+        }
+    }
+}

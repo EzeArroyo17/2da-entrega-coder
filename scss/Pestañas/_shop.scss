@@ -1,0 +1,53 @@
+/* Main Shop */
+
+.main-shop{
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "total total total total"
+        "lista buscador buscador buscador ";
+    .primero-shop{
+        grid-area: total;
+        h1{
+            text-align: center;
+            padding-top: 20px;
+            border-bottom: 3px solid black;
+        }
+    }
+    .medio-shop{
+        grid-area: lista;
+        padding-top: 25px;
+        margin-top: 100px;
+        ul{
+            li{
+                margin-top: 10px;
+                text-align: center;
+                list-style: none;
+            }
+        }
+    }
+    .buscador{
+        grid-area: buscador;
+        text-align: center;
+        padding-top: 100px;
+        input{}
+        .button-buscador{
+            h2{}
+        }
+    }
+}
+
+.ultimo-shop{
+        div{
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            grid-template-rows: repeat(3,auto);
+            .imagen-main-shop{
+                width: 350px;
+                height: 300px;
+                padding: 5px;
+            } 
+        }
+    }

@@ -1,0 +1,24 @@
+@import "Utilities/reset";
+@import "Utilities/global";
+@import "Utilities/list";
+@import "Utilities/mixing";
+
+@import "Components/header";
+@import "Components/footer";
+
+
+
+@import "Pestañas/index";
+@import "Pestañas/shop";
+@import "Pestañas/trabajos";
+@import "Pestañas/quienes-somos";
+@import "Pestañas/contacto";
+
+
+@import "Utilities/media-queris-tablet-shop";
+@import "Utilities/media-queris-main";
+@import "Utilities/media-queris-shop";
+@import "Utilities/media-queris-trabajo";
+@import "Utilities/media-queris-Q.S";
+@import "Utilities/media-queris-contacto";
+@import "Utilities/media-queris-footer";

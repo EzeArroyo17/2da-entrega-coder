@@ -1,0 +1,35 @@
+/* Media Queris Main*/
+
+@media(max-width:768px) {
+    main {
+        .main-home {
+            section {
+                @include flex(column, center, center);
+                text-align: center;
+
+                #main-home {
+                    padding-left: 100px;
+                }
+
+                .inframe-home {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+
+        .main-carrusel {
+            .carrusel {
+
+                div {
+                    img {}
+                }
+            }
+
+            button {
+                span {}
+            }
+        }
+    }
+}
+

@@ -1,0 +1,106 @@
+/* Main Quienes somos*/
+
+.quienes-somos {
+    h1 {
+        text-align: center;
+        border-bottom: 2px black solid;
+        padding: 20px;
+    }
+
+    .contenedor-quienessomos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "comenzo comenzo"
+            "vamos vamos"
+            "hacemos hacemos";
+        padding: 40px;
+    }
+
+    .card-comenzo {
+        grid-area: comenzo;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "texto imagen";
+        padding: 30px;
+        border-bottom: 3px black solid;
+        justify-items: flex-end;
+        .card{
+            grid-area: imagen;
+            width: 500px;
+            height: 350px;
+        }
+
+        .texto-primero {
+            grid-area: texto;
+            align-self: center;
+            text-align: center;
+            h2 {
+    
+            }
+
+            p {
+            
+            }
+        }
+    }
+
+    .card-vamos {
+        grid-area: vamos;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "imagen texto";
+        padding: 30px;
+        border-bottom: 3px black solid;
+
+        .card {
+            grid-area: imagen;
+            width: 500px;
+            height: 350px;
+        }
+
+        .texto-segundo {
+            grid-area: texto;
+            align-self: center;
+            padding-left: 20px;
+            text-align: center;
+
+            h2 {
+            }
+
+            p {}
+        }
+    }
+
+    .card-hacemos {
+        grid-area: hacemos;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "texto imagen";
+        padding: 30px;
+        justify-items: flex-end;
+        .card {
+            grid-area: imagen;
+            width: 500px;
+            height: 350px;
+        }
+
+        .texto-ultimo {
+            grid-area: texto;
+            align-self: center;
+            text-align: center;
+            h2{
+            }
+
+            p {
+            }
+        }
+    }
+}

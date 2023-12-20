@@ -1,0 +1,131 @@
+/* Main Contacto*/
+
+.inicio-contacto {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 3px black solid;
+
+    h1 {}
+
+    h2 {}
+}
+
+.main-contacto {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        " primero primero . ."
+        ". . segundo segundo"
+        "tercero tercero . ."
+    ;
+    border-bottom: 4px black solid;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .primero-contacto {
+        grid-area: primero;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        border-bottom: 2px black solid;
+        border-left: 2px black solid;
+        padding-top: 20PX;
+        p {
+            align-self: center;
+            text-align: center;
+        }
+        .imagen-contacto {
+            position: relative;
+            left: 50%;
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
+
+.segundo-contacto {
+    grid-area: segundo;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    border-bottom: 2px black solid;
+    border-right: 2px black solid;
+    padding-top: 20px;
+    p {
+    align-self: center;
+    text-align: center;
+    }
+    .imagen-contacto {
+    position: relative;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+}
+}
+
+.tercer-contacto {
+    grid-area: tercero;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    border-bottom: 2px black solid;
+    border-left: 2px black solid;
+    padding-top: 20px;
+    p {
+        align-self: center;
+        text-align: center;
+    }
+    .imagen-contacto {
+        position: relative;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.formulario {
+    text-align: center;
+
+    h2 {}
+}
+
+.contacto-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "formulario mapa"
+    ;
+    padding: 50px;
+    .formulario-contacto {
+        grid-area: formulario;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+
+        label {}
+
+        input {}
+
+        textarea {}
+    }
+}
+
+.mapa-contacto {
+    grid-area: mapa;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding: 10px;
+
+    h2 {
+        padding-bottom: 20px;
+    }
+
+    .mapa {}
+}
