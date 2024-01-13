@@ -226,6 +226,7 @@ main .main-carrusel .carrusel div img {
   width: 500px;
   height: 350px;
   border-radius: 2%;
+  object-fit: cover;
 }
 .trabajo-main .centro-trabajo-main section :hover {
   transform: scale(1.1);
