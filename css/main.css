@@ -134,6 +134,9 @@ main .main-carrusel .carrusel {
   width: 240px;
   height: 220px;
 }
+main .main-carrusel .carrusel div img {
+  object-fit: cover;
+}
 /* Main Shop */
 .primero-shop {
   grid-area: total;
@@ -399,7 +402,15 @@ main .main-carrusel .carrusel {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   justify-items: center;
+  border-radius: 6px;
 }
+.contacto-main .formulario-contacto input {
+  border-radius: 4px;
+}
+.contacto-main .formulario-contacto textarea {
+  border-radius: 4px;
+}
+
 .mapa-contacto {
   grid-area: mapa;
   justify-self: center;
@@ -413,6 +424,7 @@ main .main-carrusel .carrusel {
 .mapa-contacto .mapa {
   transition: all 400ms;
   position: relative;
+  border-radius: 4px;
 }
 .mapa-contacto :hover {
   transform: scale(1.15);
@@ -487,6 +499,7 @@ main .main-carrusel .carrusel {
   }
   main .main-carrusel .carrusel div img {
     padding-top: 10px;
+    object-fit: cover;
   }
 }
 /* Media Queris Shop*/
@@ -504,7 +517,7 @@ main .main-carrusel .carrusel {
   }
   .main-shop {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -556,8 +569,9 @@ main .main-carrusel .carrusel {
   }
   .trabajo-main .centro-trabajo-main section .imagenes-trabajos {
     width: 350px;
-    height: 300px;
+    height: 250px;
     text-align: center;
+    object-fit: cover;
   }
   .trabajo-main .centro-trabajo-main section p {
     text-align: center;
@@ -612,6 +626,7 @@ main .main-carrusel .carrusel {
     flex-direction: column;
     justify-content: center;
     align-items: none;
+    text-align: center;
     gap: 20px;
     padding: 0px;
   }
@@ -634,7 +649,16 @@ main .main-carrusel .carrusel {
   .contacto-main {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-top: 0px;
+  }
+  .contacto-main .formulario-contacto textarea {
+    width: 350px;
+    height: 300px;
+    border-radius: 4px;
+  }
+  .contacto-main .formulario-contacto input {
+    border-radius: 4px;
   }
   .contacto-main .mapa-contacto {
     padding-top: 50px;
@@ -642,6 +666,7 @@ main .main-carrusel .carrusel {
   .contacto-main .mapa-contacto .mapa {
     width: 300px;
     height: 250px;
+    border-radius: 4px;
   }
 }
 /* Media Queris Fooer */

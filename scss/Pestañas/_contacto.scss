@@ -107,14 +107,16 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         justify-items: center;
-
+        border-radius: 6px;
         label {
         }
 
         input {
+            border-radius: 4px;
         }
 
         textarea {
+            border-radius: 4px;
         }
     }
 }
@@ -133,6 +135,7 @@
     .mapa{
         transition: all 400ms;
         position: relative;
+        border-radius: 4px;
     }
     :hover {
         transform: scale(1.15);

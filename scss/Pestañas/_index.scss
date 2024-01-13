@@ -38,7 +38,9 @@ main{
             width: 240px;
             height: 220px;
             div{
-                img{}
+                img{
+                    object-fit: cover;
+                }
             }
         }
         button{
