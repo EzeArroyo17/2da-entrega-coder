@@ -672,7 +672,13 @@ main .main-carrusel .carrusel div img {
 /* Media Queris Fooer */
 @media (max-width: 768px) {
   footer {
-    font-size: medium;
+    font-size: 14px;
+  }
+  footer .logo-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   footer .logo-footer .imagen-footrer {
     width: 80px;
@@ -682,23 +688,14 @@ main .main-carrusel .carrusel div img {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    font-size: small;
-  }
-  footer .parte-dos-footer nav ul {
-    grid-area: menu;
   }
   footer .footer-icon {
-    grid-area: icon;
     display: flex;
     flex-direction: column;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  footer .footer-icon .icon-footer {
-    width: 35px;
-    height: 30px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
   }
   footer .footer-info h3 {
     text-align: center;
