@@ -2,15 +2,13 @@
 
 @media (max-width:768px){
     .quienes-somos {
-        @include flex(column, center, center);
         h1 {}
-        .contenedor-quienes-somos {
-            display: flex;
-            flex-direction: column;
+        .contenedor-quienessomos {
 
+            
             .card-comenzo {
                 @include flex(column-reverse, center, center);
-                text-align:left ;
+                text-align:center ;
                 .card {
                     width: 350px;
                     height: 200px;
@@ -24,13 +22,13 @@
 
             .card-vamos {
                 @include flex(column-reverse, center, center);
-                text-align: left;
-
+                text-align: center;
                 .card {
                     width: 350px;
                     height: 200px;
                     border: 0;
                 }
+                
                 .texto-segundo {
                     h2 {}
                     p {}
@@ -39,7 +37,7 @@
 
             .card-hacemos {
                 @include flex(column-reverse, center, center);
-                text-align: left;
+                text-align: center;
                 .card {
                     width: 350px;
                     height: 200px;

@@ -1,6 +1,7 @@
 /*Comienzo footer*/
 
 footer{
+    font-family: 'Montserrat', sans-serif;
     background-color: nth($list: $colores, $n: 1 );
     color: nth($list: $colores, $n: 2);
     font-size: medium;

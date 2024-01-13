@@ -3,26 +3,32 @@
 @media(max-width:768px) {
     main {
         .main-home {
+        background-image: url(../Archivos/FONDOS/Posible\ fondo\ 1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 900px;
+        border-bottom: 5px solid #181818;
+        object-fit: cover;
+        @include flex(column, top, center);
             section {
-                @include flex(column, center, center);
-                text-align: center;
-
                 #main-home {
-                    padding-left: 100px;
                 }
 
-                .inframe-home {
-                    width: 200px;
-                    height: 200px;
+                .inframe-main {
+                    width: 350px;
+                    height: 250px;
                 }
             }
         }
 
         .main-carrusel {
-            .carrusel {
 
-                div {
-                    img {}
+            .carrusel {
+                div {            
+                    img {
+                        padding-top: 10px;
+                    }
                 }
             }
 

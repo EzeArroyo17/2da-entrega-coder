@@ -1,44 +1,52 @@
 /* Media Queris Shop*/
 
 @media (max-width:768px) {
-    .main-shop {
 
-        .primero-shop {
+    .primero-shop {
+        text-align: center;
+        h1 {
+            padding-top: 10px;
+            font-weight: bolder;
             text-align: center;
-            h1 {
-                padding-top: 20px;
-                font-weight: bolder;
-                text-align: center;
-                padding-bottom: 15px;
-            }
+            padding-bottom: 10px;
+            font-size: 30px;
+            border-bottom: 3px solid black;
         }
+    }
+
+    .main-shop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
 
         .medio-shop {
-            ul {
-                li {
-                    list-style-type: none;
-                    text-align: center;
-                    font-size: medium;
+            a {
+            }              
+                ul {
+                    li{
+                        a{}
+                    }
                 }
-            }
+            
         }
 
         .buscador {
             display: flex;
             flex-direction: row;
             justify-content:center;
-            padding-top: 200px;
+            align-items: left;
+            padding: 0;
             input {
-                width: 150px;
-                height: 30px;
             }
             .button-buscador{
                 height: 30px;
+                width: 90px;
+
                 h2 {
-                    font-size: 17px;
-                    padding-left: 3px;
-                    padding-right: 3px;
-                    padding-top: 5px;
+                    font-size: 15px;
+                    font-weight: 500;
                 }
             }
         }
@@ -48,9 +56,11 @@
             display: grid;
             grid-template-columns: repeat(3,auto);
             grid-template-rows: repeat(3,auto);
+            justify-self: center;
+            align-self: center;
             .imagen-main-shop{
-                width: 150px;
-                height: 150px;
+                width: 120px;
+                height: 120px;
                 padding: 5px;
             } 
         }

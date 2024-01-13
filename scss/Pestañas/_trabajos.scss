@@ -9,18 +9,31 @@
         padding-bottom: 10px;
     }
     .centro-trabajo-main{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 20px;
-        .imagenes-trabajos{
-            width: 400px;
-            height: 325px;
-            padding: 5px;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(3,auto);
+        justify-items: center;
+        align-self: center;
+        gap: 10px;
+        padding-top: 50px;
+        section{
+            transition: all 300ms;
+            .imagenes-trabajos{
+                width: 500px;
+                height: 350px;          
+                border-radius: 2%;
+            }
+                :hover{
+                    transform: scale(1.10);
+                }
+            
+            p{
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+            }
         }
-        p{
-            text-align: center;
-        }
+        
+        
     }
 }
